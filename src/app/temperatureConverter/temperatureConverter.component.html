@@ -2,14 +2,14 @@
   <div class="input-wrapper">
     <div class="input-container">
       <label class="input-label">Celsius: </label>
-      <input type="number" class="input" />
+      <input data-test-id="celsius-input" type="number" class="input" (change)="calculateFarenheit($event.target.value)" [(ngModel)]="cel"/>
     </div>
   </div>
 
   <div class="input-wrapper">
     <div class="input-container">
       <label class="input-label">Fahrenheit: </label>
-      <input type="number" class="input" />
+      <input data-test-id="fahrenheit-input" type="number" class="input" (change)="calculateCelcius($event.target.value)" [(ngModel)]="far"/>
     </div>
   </div>
 </div>
