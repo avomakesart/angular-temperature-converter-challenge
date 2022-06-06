@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
-<testsuite name="HeadlessChrome 102.0.5005 (Windows 10.0.0)" package="unit" timestamp="2022-06-06T19:44:03" id="0" hostname="DESKTOP-0L3EPNO" tests="5" errors="0" failures="0" time="0.075">
+<testsuite name="HeadlessChrome 102.0.5005 (Windows 10.0.0)" package="unit" timestamp="2022-06-06T23:02:46" id="0" hostname="DESKTOP-0L3EPNO" tests="5" errors="0" failures="0" time="0.075">
   <properties>
     <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/102.0.5005.63 Safari/537.36"/>
   </properties>
-  <testcase name="TemperatureConverter Typing value in Fahrenheit field gets correct Celsius value" time="0.041" classname=".TemperatureConverter"/>
-  <testcase name="TemperatureConverter Typing value in Celsius field gets correct Fahrenheit value upto 1 decimal values" time="0.009" classname=".TemperatureConverter"/>
-  <testcase name="TemperatureConverter Perform series of actions" time="0.01" classname=".TemperatureConverter"/>
-  <testcase name="TemperatureConverter Typing value in Fahrenheit field gets correct Celsius value upto 1 decimal values" time="0.009" classname=".TemperatureConverter"/>
-  <testcase name="TemperatureConverter Typing value in Celsius field gets correct Fahrenheit value" time="0.006" classname=".TemperatureConverter"/>
+  <testcase name="TemperatureConverter Typing value in Celsius field gets correct Fahrenheit value" time="0.044" classname=".TemperatureConverter"/>
+  <testcase name="TemperatureConverter Typing value in Celsius field gets correct Fahrenheit value upto 1 decimal values" time="0.008" classname=".TemperatureConverter"/>
+  <testcase name="TemperatureConverter Typing value in Fahrenheit field gets correct Celsius value" time="0.008" classname=".TemperatureConverter"/>
+  <testcase name="TemperatureConverter Typing value in Fahrenheit field gets correct Celsius value upto 1 decimal values" time="0.007" classname=".TemperatureConverter"/>
+  <testcase name="TemperatureConverter Perform series of actions" time="0.008" classname=".TemperatureConverter"/>
   <system-out>
     <![CDATA[
 ]]>

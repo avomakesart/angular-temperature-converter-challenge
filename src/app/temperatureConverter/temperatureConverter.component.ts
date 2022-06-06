@@ -15,27 +15,18 @@ export class TemperatureConverter implements OnInit {
 
   ngOnInit() {}
 
-  conversion(from: string) {
-    if (from === 'c') {
-      if (this.celsius === null) {
-        this.fahrenheit = null;
-        return;
+  onChange(value: number | null, type: "c" | "f") {
+    let result: number = null;
+    if (value !== null) {
+      result = type === "c" ? (value * 9 / 5) + 32 : (value - 32) *  5 / 9
+      if (Math.floor(result) !== result) {
+        result = Number(result.toFixed(1));
       }
-      this.fahrenheit = (this.celsius * 9 / 5) + 32;
-      if (Math.floor(this.fahrenheit) === this.fahrenheit) {
-        this.fahrenheit = Number(this.fahrenheit.toFixed(1));
-      }
-      
+    }
+    if (type === "c") {
+      this.fahrenheit = result;
     } else {
-      if (this.fahrenheit === null) {
-        this.celsius = null;  
-        return;
-      }
-      this.celsius = (this.fahrenheit - 32) *  5 / 9;
-      if (Math.floor(this.celsius) !== this.celsius) {
-        this.celsius = Number(this.celsius.toFixed(1));
-      }      
+      this.celsius = result;
     }
   }
-
 }
